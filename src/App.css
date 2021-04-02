@@ -1,38 +1,63 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app > img {
+  width: 100%;
+  display: block;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app__content {
+  display: flex;
+  justify-content: space-between;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app__left {
+  flex: 1.58;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.app__right {
+  margin-top: 0;
+  background-color: #e5e5e5;
+  flex: 1;
+}
+.app__zopnik {
+  /* margin-top: 80px;
+  width: 200px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.app__zopnik > img {
+  margin-top: 50px;
+  width: 90%;
+}
+.app__welcome {
+  text-align: center;
+  margin-top: 50px;
+  color: #eb4034;
+}
+.app__leftText {
+  text-align: center;
+  margin-top: 20vh;
+  color: #333232;
 }
 
-.App-link {
-  color: #61dafb;
+.app__leftLogo {
+  margin-top: 100px;
+  width: 400px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media only screen and (max-width: 886px) {
+  .app__right {
+    width: 38%;
   }
-  to {
-    transform: rotate(360deg);
+  .app__left {
+    width: 60%;
+  }
+  .app__leftLogo {
+    width: 200px;
   }
 }
