@@ -1,5 +1,5 @@
 import "./App.css";
-import header from "./Component2.svg";
+import header from "./Component1.svg";
 import logo from "./logo.svg";
 import leftlogo from "./leftlogo.png";
 import Login from "./Login";
